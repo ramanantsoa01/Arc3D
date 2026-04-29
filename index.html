@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARC'A 3D — L'art de révéler l'architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="mob-menu" id="mobMenu">
+        <a href="#about" onclick="closeMob()">À Propos</a>
+        <a href="#services" onclick="closeMob()">Services</a>
+        <a href="#portfolio" onclick="closeMob()">Portfolio</a>
+        <a href="#why" onclick="closeMob()">Pourquoi Nous</a>
+        <a href="#contact" onclick="closeMob()">Contact</a>
+    </div>
+
+    <nav id="nav">
+        <a href="#" class="nav-logo">ARC<span>'</span>A <span>3D</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#why">Pourquoi Nous</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Nous Contacter</a>
+        <div class="nav-burger" id="menuBtn"><span></span><span></span><span></span></div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-vline"></div>
+        <div class="hero-cnt">
+            <div class="hero-tag">Visualisation 3D & Dossiers de Permis</div>
+            <h1 class="hero-title">Donnez Vie à vos Projets.<br>Sécurisez votre <span class="g">Réussite</span>.</h1>
+            <p class="hero-sub">De la conception 3D photoréaliste au montage complet de vos dossiers administratifs.
+                Précision, expertise et conformité garanties pour tous vos projets en France.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-gold"><span>Démarrer un projet</span><span class="arrow">→</span></a>
+                <!-- <a href="#services" class="btn-out">Découvrir nos services →</a> -->
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="about-w">
+            <div class="about-imgbox reveal">
+                <div class="about-ph">
+                    <div class="about-badge">Depuis 2019</div>
+                </div>
+            </div>
+            <div>
+                <div class="lbl reveal">À Propos</div>
+                <h2 class="h2 reveal d1">Un studio<br>d'expertise<br><span class="g">architecturale</span></h2>
+                <p class="about-p reveal d2">Depuis 2019, ARC'A 3D accompagne vos projets partout en France avec une
+                    rigueur absolue. Notre équipe de 10 professionnels fusionne modélisation 3D de haute précision et
+                    expertise réglementaire pour la préparation de vos dossiers de Déclaration Préalable (DP) et Permis
+                    de Construire (PC).</p>
+                <div class="metrics reveal d3">
+                    <div class="metric"><span class="m-n">4000+</span><span class="m-l">Dossiers</span></div>
+                    <div class="metric"><span class="m-n">10</span><span class="m-l">Experts</span></div>
+                    <div class="metric"><span class="m-n">6+</span><span class="m-l">Années</span></div>
+                </div>
+                <div class="specs reveal d4">
+                    <div class="spec">Précision technique et conformité réglementaire</div>
+                    <div class="spec">Délais rapides adaptés aux exigences administratives</div>
+                    <div class="spec">Rapport qualité / prix d'excellence</div>
+                    <div class="spec">Communication fluide et accompagnement professionnel</div>
+                    <div class="spec"
+                        style="font-weight: 500; margin-top: 1.5rem; border-left: 2px solid var(--gold); padding-left: 1rem;">
+                        Plans 2D, modélisation 3D et dossiers prêts à déposer.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="svc-w">
+            <div class="svc-head reveal">
+                <div>
+                    <div class="lbl">Services</div>
+                    <h2 class="h2">Notre <span class="g">expertise</span></h2>
+                </div>
+                <p class="svc-note">Chaque projet est traité avec une rigueur absolue, du brief initial à la livraison
+                    finale.</p>
+            </div>
+            <div class="svc-grid">
+                <div class="svc-card reveal">
+                    <div class="svc-num">01</div><span class="svc-icon">📐</span>
+                    <div class="svc-name">Dossiers Administratifs</div>
+                    <p class="svc-desc">Déclaration préalable (DP) et Permis de construire (PC) traités avec une
+                        précision réglementaire absolue. Délai garanti de 3 à 10 jours ouvrés.</p>
+                    <span class="svc-tag">3–10 jours</span>
+                </div>
+                <div class="svc-card reveal d2">
+                    <div class="svc-num">02</div><span class="svc-icon">🏛</span>
+                    <div class="svc-name">Modélisation 3D</div>
+                    <p class="svc-desc">Reconstruction tridimensionnelle fidèle à chaque détail architectural. Plans,
+                        volumes, matériaux — chaque élément est modélisé avec exactitude.</p>
+                    <span class="svc-tag">Haute précision</span>
+                </div>
+                <div class="svc-card reveal d3">
+                    <div class="svc-num">03</div><span class="svc-icon">✨</span>
+                    <div class="svc-name">Rendus Photoréalistes</div>
+                    <p class="svc-desc">Des visuels d'une qualité photographique qui donnent vie à vos projets avant
+                        même leur construction. Lumière, matière, ambiance — tout y est.</p>
+                    <span class="svc-tag">Niveau européen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="port-w">
+            <div class="port-head reveal">
+                <div class="lbl">Portfolio</div>
+                <h2 class="h2">Nos <span class="g">réalisations</span></h2>
+                <div class="filters">
+                    <button class="f-btn on" onclick="doFilter(this,'all')">Tous</button>
+                    <button class="f-btn" onclick="doFilter(this,'construction')">Nouvelle construction</button>
+                    <button class="f-btn" onclick="doFilter(this,'extension')">Extension</button>
+                    <button class="f-btn" onclick="doFilter(this,'interieur')">Rendu intérieur</button>
+                </div>
+            </div>
+            <div class="masonry reveal">
+                <div class="m-item" data-cat="construction">
+                    <div class="m-img ph1"></div>
+                    <div class="m-ov">
+                        <div class="m-line"></div>
+                        <div class="m-title">Villa Contemporaine</div>
+                        <div class="m-cat">Nouvelle Construction</div>
+                    </div>
+                </div>
+                <div class="m-item" data-cat="interieur">
+                    <div class="m-img ph2"></div>
+                    <div class="m-ov">
+                        <div class="m-line"></div>
+                        <div class="m-title">Salon Lumière Zénithale</div>
+                        <div class="m-cat">Rendu Intérieur</div>
+                    </div>
+                </div>
+                <div class="m-item" data-cat="extension">
+                    <div class="m-img ph3"></div>
+                    <div class="m-ov">
+                        <div class="m-line"></div>
+                        <div class="m-title">Rehaussement Maison Ancienne</div>
+                        <div class="m-cat">Extension</div>
+                    </div>
+                </div>
+                <div class="m-item" data-cat="interieur">
+                    <div class="m-img ph4"></div>
+                    <div class="m-ov">
+                        <div class="m-line"></div>
+                        <div class="m-title">Suite Parentale</div>
+                        <div class="m-cat">Rendu Intérieur</div>
+                    </div>
+                </div>
+                <div class="m-item" data-cat="construction">
+                    <div class="m-img ph5"></div>
+                    <div class="m-ov">
+                        <div class="m-line"></div>
+                        <div class="m-title">Résidence Moderne</div>
+                        <div class="m-cat">Nouvelle Construction</div>
+                    </div>
+                </div>
+                <div class="m-item" data-cat="extension">
+                    <div class="m-img ph6"></div>
+                    <div class="m-ov">
+                        <div class="m-line"></div>
+                        <div class="m-title">Extension Verrière</div>
+                        <div class="m-cat">Extension</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="proj-w">
+            <div class="reveal">
+                <div class="lbl">Projet en vedette</div>
+                <h2 class="h2">Rehaussement <span class="g">Villa Moderne</span></h2>
+            </div>
+            <div class="proj-hero">
+                <div class="reveal">
+                    <div class="proj-img"></div>
+                </div>
+                <div class="reveal d2">
+                    <p class="proj-desc">"Ce rehaussement incarne la philosophie d'ARC'A 3D : sublimer l'existant par
+                        une vision architecturale audacieuse. Chaque volume, chaque ouverture, chaque jeu de matières a
+                        été pensé pour révéler le plein potentiel de ce lieu."</p>
+                    <div class="proj-grid">
+                        <div class="p-cell">
+                            <div class="p-k">Type</div>
+                            <div class="p-v">Rehaussement</div>
+                        </div>
+                        <div class="p-cell">
+                            <div class="p-k">Style</div>
+                            <div class="p-v">Contemporain</div>
+                        </div>
+                        <div class="p-cell">
+                            <div class="p-k">Surface</div>
+                            <div class="p-v">180 m²</div>
+                        </div>
+                        <div class="p-cell">
+                            <div class="p-k">Délai</div>
+                            <div class="p-v">7 jours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="reveal">
+                    <div class="room-ph r1"></div>
+                    <div class="room-name">Salon · Salle à Manger</div>
+                    <div class="room-sub">Espace ouvert — lumière naturelle</div>
+                </div>
+                <div class="reveal d2">
+                    <div class="room-ph r2"></div>
+                    <div class="room-name">Chambres</div>
+                    <div class="room-sub">Volumes épurés — sérénité</div>
+                </div>
+                <div class="reveal d3">
+                    <div class="room-ph r3"></div>
+                    <div class="room-name">Suite Parentale</div>
+                    <div class="room-sub">Luxe discret — raffinement</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="why-w">
+            <div class="reveal">
+                <div class="lbl">Nos atouts</div>
+                <h2 class="h2">Pourquoi choisir <span class="g">ARC'A 3D</span></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal"><span class="why-icon">🏛</span>
+                    <div class="why-name">Spécialistes dossiers mairie</div>
+                    <p class="why-txt">DP et PC maîtrisés dans le détail. Nous connaissons les exigences réglementaires
+                        et livrons des dossiers complets et irréprochables.</p>
+                </div>
+                <div class="why-card reveal d2"><span class="why-icon">⚡</span>
+                    <div class="why-name">Délais ultra-rapides</div>
+                    <p class="why-txt">3 à 10 jours ouvrés pour vos dossiers administratifs. Réactivité et fiabilité
+                        sont au cœur de notre engagement.</p>
+                </div>
+                <div class="why-card reveal d3"><span class="why-icon">🌍</span>
+                    <div class="why-name">Qualité européenne</div>
+                    <p class="why-txt">Nos standards s'alignent avec les meilleures agences d'architecture
+                        internationales. Un niveau d'exigence sans compromis.</p>
+                </div>
+                <div class="why-card reveal d4"><span class="why-icon">💎</span>
+                    <div class="why-name">Prix compétitif</div>
+                    <p class="why-txt">Une qualité premium accessible. Nous croyons que l'excellence architecturale doit
+                        rester à portée de tous les projets ambitieux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-band">
+        <div class="cta-in reveal">
+            <h2 class="cta-title">Votre projet mérite<br><span class="g">l'excellence</span></h2>
+            <p class="cta-sub">Travaillons ensemble.</p>
+            <a href="#contact" class="btn-gold"><span>Démarrer un projet</span><span class="arrow">→</span></a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="cont-w">
+            <div class="reveal">
+                <div class="lbl">Contact</div>
+                <h2 class="h2">Travaillons <span class="g">ensemble</span></h2>
+                <p class="cont-p">Partagez votre vision. Nous la transformerons en réalité avec la précision et
+                    l'élégance qu'elle mérite.</p>
+                <div class="cont-rows">
+                    <div class="c-row">
+                        <div class="c-ico">📞</div>
+                        <div>
+                            <div class="c-lbl">Téléphone</div><a href="tel:+261343230322" class="c-val">+261 34 323
+                                0322</a>
+                        </div>
+                    </div>
+                    <div class="c-row">
+                        <div class="c-ico">✉</div>
+                        <div>
+                            <div class="c-lbl">Email</div><a href="mailto:arca3D@proton.me"
+                                class="c-val">arca3D@proton.me</a>
+                        </div>
+                    </div>
+                    <div class="c-row">
+                        <div class="c-ico">⏱</div>
+                        <div>
+                            <div class="c-lbl">Délai de réponse</div>
+                            <div class="c-val">Sous 24h ouvrées</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-form reveal d2">
+                <div class="f-row">
+                    <div class="fg"><label>Prénom</label><input type="text" placeholder="Jean" /></div>
+                    <div class="fg"><label>Nom</label><input type="text" placeholder="Martin" /></div>
+                </div>
+                <div class="fg"><label>Email</label><input type="email" placeholder="jean.martin@email.com" /></div>
+                <div class="fg"><label>Type de projet</label>
+                    <select>
+                        <option value="">Sélectionner...</option>
+                        <option>Dossier DP / PC</option>
+                        <option>Modélisation 3D</option>
+                        <option>Rendu photoréaliste</option>
+                        <option>Projet complet</option>
+                    </select>
+                </div>
+                <div class="fg"><label>Votre projet</label><textarea
+                        placeholder="Décrivez votre projet : type, surface, localisation, délai souhaité..."></textarea>
+                </div>
+                <button class="f-submit">Envoyer la demande →</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-in">
+            <div class="foot-logo">ARC<span>'</span>A <span>3D</span></div>
+            <p class="foot-copy">© 2025 ARC'A 3D — Studio de Visualisation Architecturale</p>
+            <ul class="foot-links">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
