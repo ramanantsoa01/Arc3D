@@ -190,46 +190,49 @@ nav.scrolled .nav-menu-btn {
 }
 
 .menu-icon {
-    width: 22px;
+    width: 26px;
     height: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
     position: relative;
 }
 
-.menu-icon-bar {
+.bar {
     display: block;
     height: 1.5px;
     background: #fff;
     border-radius: 4px;
-    transform-origin: center;
-    transition: transform .45s cubic-bezier(0.23, 1, 0.32, 1),
-                opacity .3s ease,
-                width .4s cubic-bezier(0.23, 1, 0.32, 1),
-                background-color .3s;
+    transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-nav.scrolled .menu-icon-bar {
+nav.scrolled .bar {
     background: var(--text);
 }
 
-.bar-top    { width: 100%; }
-.bar-mid    { width: 70%; }
-.bar-bot    { width: 85%; }
+.bar-1 { width: 100%; }
+.bar-2 { width: 70%; }
+.bar-3 { width: 45%; }
 
-/* ACTIVE STATE → stylized X */
-.nav-menu-btn.active .bar-top {
-    transform: translateY(7.25px) rotate(45deg);
+/* HOVER EFFECT - Magnetic stretch */
+.nav-menu-btn:hover .bar {
     width: 100%;
     background: var(--gold);
 }
-.nav-menu-btn.active .bar-mid {
-    opacity: 0;
-    transform: scaleX(0);
+
+/* ACTIVE STATE → Stylized Modern X */
+.nav-menu-btn.active .bar-1 {
+    transform: translateY(7px) rotate(45deg);
+    width: 100%;
+    background: var(--gold);
 }
-.nav-menu-btn.active .bar-bot {
-    transform: translateY(-7.25px) rotate(-45deg);
+.nav-menu-btn.active .bar-2 {
+    opacity: 0;
+    transform: translateX(20px);
+}
+.nav-menu-btn.active .bar-3 {
+    transform: translateY(-7.5px) rotate(-45deg);
     width: 100%;
     background: var(--gold);
 }
