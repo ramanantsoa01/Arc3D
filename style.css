@@ -28,6 +28,7 @@
     --section-pad: clamp(5rem, 10vw, 10rem);
     --max-w: 1360px;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 18px;
@@ -468,8 +469,11 @@ nav.scrolled .menu-label {
     .mob-nav-item {
         padding: 1.25rem .5rem;
     }
-    
-    .f-btn, .btn-gold, .nav-cta, .mob-cta-btn {
+
+    .f-btn,
+    .btn-gold,
+    .nav-cta,
+    .mob-cta-btn {
         min-height: 48px;
     }
 }
@@ -747,11 +751,25 @@ nav.scrolled .menu-label {
     transform: translateY(0);
 }
 
-.d1 { transition-delay: 0.1s; }
-.d2 { transition-delay: 0.2s; }
-.d3 { transition-delay: 0.3s; }
-.d4 { transition-delay: 0.4s; }
-.d5 { transition-delay: 0.5s; }
+.d1 {
+    transition-delay: 0.1s;
+}
+
+.d2 {
+    transition-delay: 0.2s;
+}
+
+.d3 {
+    transition-delay: 0.3s;
+}
+
+.d4 {
+    transition-delay: 0.4s;
+}
+
+.d5 {
+    transition-delay: 0.5s;
+}
 
 /* ABOUT */
 #about {
@@ -819,8 +837,9 @@ nav.scrolled .menu-label {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.95;
-    color: var(--text-2);
+    color: #000;
     margin: 1.8rem 0 2.5rem;
+    text-align: justify;
 }
 
 .about-p em {
@@ -900,7 +919,7 @@ nav.scrolled .menu-label {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: 
+    background-image:
         linear-gradient(rgba(184, 145, 58, 0.04) 1.5px, transparent 1.5px),
         linear-gradient(90deg, rgba(184, 145, 58, 0.04) 1.5px, transparent 1.5px);
     background-size: 60px 60px;
@@ -975,11 +994,9 @@ nav.scrolled .menu-label {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(
-        600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-        rgba(184, 145, 58, 0.1),
-        transparent 40%
-    );
+    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(184, 145, 58, 0.1),
+            transparent 40%);
     opacity: 0;
     transition: opacity .5s ease;
     pointer-events: none;
@@ -990,7 +1007,7 @@ nav.scrolled .menu-label {
     transform: translateY(-20px);
     border-color: rgba(184, 145, 58, 0.4);
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
 }
 
 .svc-card:hover::before {
@@ -1337,10 +1354,12 @@ nav.scrolled .menu-label {
    ========================================================================== */
 #why {
     padding: var(--section-pad) 0;
-    background: #0a0a0a; /* Deep dark immersive background */
+    background: #0a0a0a;
+    /* Deep dark immersive background */
     position: relative;
     overflow: hidden;
-    color: #fff; /* Ensure text is light by default in this section */
+    color: #fff;
+    /* Ensure text is light by default in this section */
 }
 
 /* Subtle glowing orb in the background */
@@ -1361,7 +1380,8 @@ nav.scrolled .menu-label {
     color: var(--gold);
 }
 
-#why .lbl::before, #why .lbl::after {
+#why .lbl::before,
+#why .lbl::after {
     background: var(--gold);
 }
 
@@ -1369,12 +1389,21 @@ nav.scrolled .menu-label {
     color: #fff;
 }
 
+#why .why-w>.reveal:first-child {
+    text-align: center;
+}
+
+#why .why-w>.reveal:first-child .lbl {
+    justify-content: center;
+}
+
 .why-w {
     max-width: var(--max-w);
     margin: 0 auto;
     padding: 0 var(--container-px);
     position: relative;
-    z-index: 1; /* Above the glowing orb */
+    z-index: 1;
+    /* Above the glowing orb */
 }
 
 .why-grid-v3 {
@@ -1455,12 +1484,20 @@ nav.scrolled .menu-label {
 
 /* Float animation for "live" feel */
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .card-anim-wrapper {
-    display: block; /* Overriding previous flex layout */
+    display: block;
+    /* Overriding previous flex layout */
     width: 100%;
     height: 100%;
     transition: all .5s var(--ease);
@@ -1470,9 +1507,17 @@ nav.scrolled .menu-label {
     animation: float 8s ease-in-out infinite;
 }
 
-.why-card-v3:nth-child(2).vis .card-anim-wrapper { animation-delay: 1s; }
-.why-card-v3:nth-child(3).vis .card-anim-wrapper { animation-delay: 2s; }
-.why-card-v3:nth-child(4).vis .card-anim-wrapper { animation-delay: 3s; }
+.why-card-v3:nth-child(2).vis .card-anim-wrapper {
+    animation-delay: 1s;
+}
+
+.why-card-v3:nth-child(3).vis .card-anim-wrapper {
+    animation-delay: 2s;
+}
+
+.why-card-v3:nth-child(4).vis .card-anim-wrapper {
+    animation-delay: 3s;
+}
 
 /* Specific entrance for Why Us */
 .why-card-v3.reveal {
@@ -1509,17 +1554,20 @@ nav.scrolled .menu-label {
         flex-direction: column;
         text-align: center;
     }
+
     .card-accent {
         width: 100%;
         height: 60px;
         border-right: none;
         border-bottom: 1px solid var(--border);
     }
+
     .card-head {
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
     }
+
     .card-main {
         padding: 2.5rem 1.5rem;
     }
@@ -1589,6 +1637,7 @@ nav.scrolled .menu-label {
     background: var(--bg-2);
     padding: .6rem 1.2rem;
     border-radius: 50px;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -1651,6 +1700,7 @@ nav.scrolled .menu-label {
     transition: all .4s var(--ease);
     position: relative;
     overflow: hidden;
+    border-radius: 16px;
 }
 
 .cont-card::before {
@@ -1914,7 +1964,8 @@ footer {
         --section-pad: 8rem;
     }
 
-    .nav-links, .nav-cta {
+    .nav-links,
+    .nav-cta {
         display: none;
     }
 
@@ -1922,7 +1973,8 @@ footer {
         display: flex;
     }
 
-    .about-w, .cont-w {
+    .about-w,
+    .cont-w {
         grid-template-columns: 1fr;
         gap: 5rem;
     }
@@ -1952,11 +2004,40 @@ footer {
         margin: 0 auto;
     }
 
+    .about-w>div:nth-child(2) .lbl,
+    .about-w>div:nth-child(2) .h2 {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-w>div:nth-child(2) .about-p {
+        text-align: justify;
+    }
+
+    .about-ph {
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 1; /* Square format, slightly smaller than portrait */
+        border-radius: 12px;
+    }
+
+    .about-imgbox::before {
+        top: -1rem;
+        left: -1rem;
+    }
+
+    .about-imgbox::after {
+        bottom: -1rem;
+        right: -1rem;
+    }
+
     .hero-title {
         font-size: clamp(2.2rem, 10vw, 3.5rem);
     }
 
-    .hero-tag::before, .hero-tag::after {
+    .hero-tag::before,
+    .hero-tag::after {
         width: 20px;
     }
 
@@ -1991,12 +2072,15 @@ footer {
         flex-wrap: nowrap;
         overflow-x: auto;
         padding-bottom: 1rem;
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
     }
 
     .filters::-webkit-scrollbar {
-        display: none; /* Chrome, Safari and Opera */
+        display: none;
+        /* Chrome, Safari and Opera */
     }
 
     .f-btn {
@@ -2016,7 +2100,10 @@ footer {
         justify-content: center;
     }
 
-    .lbl::before { display: none; }
+    .lbl::before {
+        display: none;
+    }
+
     .lbl::after {
         content: '';
         width: 28px;
@@ -2024,8 +2111,10 @@ footer {
         background: var(--gold);
     }
 
-    .cont-status { justify-content: center; }
-    
+    .cont-status {
+        justify-content: center;
+    }
+
     .cont-extra {
         align-items: center;
         flex-direction: row;
@@ -2090,7 +2179,8 @@ footer {
         columns: 1;
     }
 
-    .why-card-v3, .card-anim-wrapper {
+    .why-card-v3,
+    .card-anim-wrapper {
         flex-direction: column;
     }
 
@@ -2157,7 +2247,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: auto; /* Allow scrolling if zoomed very large */
+    overflow: auto;
+    /* Allow scrolling if zoomed very large */
     position: relative;
 }
 
@@ -2167,7 +2258,7 @@ footer {
     object-fit: contain;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     transform-origin: center;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     cursor: grab;
 }
@@ -2215,10 +2306,11 @@ footer {
         bottom: 2rem;
         right: 50%;
         transform: translateX(50%);
-        background: rgba(0,0,0,0.5);
+        background: rgba(0, 0, 0, 0.5);
         padding: 0.5rem 1rem;
         border-radius: 50px;
     }
+
     #lbImg {
         max-width: 95vw;
     }
