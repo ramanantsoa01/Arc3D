@@ -1962,6 +1962,22 @@ footer {
         columns: 2;
     }
 
+    .filters {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .filters::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+    }
+
+    .f-btn {
+        flex-shrink: 0;
+    }
+
     .why-grid-v3 {
         grid-template-columns: 1fr;
         gap: 2rem;
