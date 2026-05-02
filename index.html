@@ -214,59 +214,15 @@
                 <div class="filters">
                     <button class="f-btn on" onclick="doFilter(this,'all')">Tous</button>
                     <button class="f-btn" onclick="doFilter(this,'construction')">Nouvelle construction</button>
-                    <button class="f-btn" onclick="doFilter(this,'extension')">Extension</button>
+                    <button class="f-btn" onclick="doFilter(this,'coupe-3d')">Coupe 3D</button>
+                    <button class="f-btn" onclick="doFilter(this,'rehaussement')">Rehaussement</button>
                     <button class="f-btn" onclick="doFilter(this,'interieur')">Rendu intérieur</button>
+                    <button class="f-btn" onclick="doFilter(this,'chambre')">Chambres</button>
+                    <button class="f-btn" onclick="doFilter(this,'cuisine')">Cuisine</button>
                 </div>
             </div>
-            <div class="masonry reveal">
-                <div class="m-item" data-cat="construction">
-                    <div class="m-img ph1"></div>
-                    <div class="m-ov">
-                        <div class="m-line"></div>
-                        <div class="m-title">Villa Contemporaine</div>
-                        <div class="m-cat">Nouvelle Construction</div>
-                    </div>
-                </div>
-                <div class="m-item" data-cat="interieur">
-                    <div class="m-img ph2"></div>
-                    <div class="m-ov">
-                        <div class="m-line"></div>
-                        <div class="m-title">Salon Lumière Zénithale</div>
-                        <div class="m-cat">Rendu Intérieur</div>
-                    </div>
-                </div>
-                <div class="m-item" data-cat="extension">
-                    <div class="m-img ph3"></div>
-                    <div class="m-ov">
-                        <div class="m-line"></div>
-                        <div class="m-title">Rehaussement Maison Ancienne</div>
-                        <div class="m-cat">Extension</div>
-                    </div>
-                </div>
-                <div class="m-item" data-cat="interieur">
-                    <div class="m-img ph4"></div>
-                    <div class="m-ov">
-                        <div class="m-line"></div>
-                        <div class="m-title">Suite Parentale</div>
-                        <div class="m-cat">Rendu Intérieur</div>
-                    </div>
-                </div>
-                <div class="m-item" data-cat="construction">
-                    <div class="m-img ph5"></div>
-                    <div class="m-ov">
-                        <div class="m-line"></div>
-                        <div class="m-title">Résidence Moderne</div>
-                        <div class="m-cat">Nouvelle Construction</div>
-                    </div>
-                </div>
-                <div class="m-item" data-cat="extension">
-                    <div class="m-img ph6"></div>
-                    <div class="m-ov">
-                        <div class="m-line"></div>
-                        <div class="m-title">Extension Verrière</div>
-                        <div class="m-cat">Extension</div>
-                    </div>
-                </div>
+            <div class="masonry reveal" id="masonryContainer">
+                <!-- Projects will be rendered dynamically here -->
             </div>
         </div>
     </section>
@@ -494,6 +450,18 @@
             </ul>
         </div>
     </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <div class="lb-controls">
+            <button class="lb-btn" id="lbZoomOut" title="Zoom Arrière">−</button>
+            <button class="lb-btn" id="lbZoomIn" title="Zoom Avant">+</button>
+            <button class="lb-btn" id="lbClose" title="Fermer">×</button>
+        </div>
+        <div class="lb-content" id="lbContent">
+            <img id="lbImg" src="" alt="Project Preview">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

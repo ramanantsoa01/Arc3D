@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/1.jpeg",
+        "height": "400px"
+    },
+    {
+        "id": 2,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/2.jpeg",
+        "height": "350px"
+    },
+    {
+        "id": 3,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/3.jpeg",
+        "height": "450px"
+    },
+    {
+        "id": 4,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/4.jpeg",
+        "height": "320px"
+    },
+    {
+        "id": 5,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/5.jpeg",
+        "height": "420px"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/6.jpeg",
+        "height": "300px"
+    },
+    {
+        "id": 7,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/7.jpeg",
+        "height": "380px"
+    },
+    {
+        "id": 8,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/8.jpeg",
+        "height": "410px"
+    },
+    {
+        "id": 9,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/9.jpeg",
+        "height": "340px"
+    },
+    {
+        "id": 10,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "image": "assets/NouvelleConstruction/10.jpeg",
+        "height": "390px"
+    },
+    {
+        "id": 13,
+        "title": "Salon 'Espace & Lumière'",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
+        "height": "350px"
+    }
+]
