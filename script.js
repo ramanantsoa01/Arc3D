@@ -68,3 +68,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         }
     });
 });
+
+/* ── SERVICES SPOTLIGHT ── */
+const svcSection = document.getElementById('services');
+if (svcSection) {
+    svcSection.addEventListener('mousemove', e => {
+        const rect = svcSection.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        svcSection.style.setProperty('--mouse-x', `${x}px`);
+        svcSection.style.setProperty('--mouse-y', `${y}px`);
+    });
+}
