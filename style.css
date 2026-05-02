@@ -1102,35 +1102,43 @@ nav.scrolled .menu-label {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .4rem;
-    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3rem auto 0;
+    gap: 0.8rem;
 }
 
 .f-btn {
     font-family: var(--font);
-    font-size: .63rem;
+    font-size: .65rem;
     font-weight: 500;
-    letter-spacing: .18em;
+    letter-spacing: .15em;
     text-transform: uppercase;
-    color: var(--text-3);
-    background: none;
-    border: 1px solid transparent;
-    padding: .55rem 1.5rem;
+    color: var(--text-2);
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    padding: 0.8rem 1.6rem;
     cursor: pointer;
     border-radius: 40px;
-    transition: all .4s var(--ease);
+    transition: all .4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
 }
 
 .f-btn.on {
-    background: var(--gold-dim);
+    color: #fff;
+    background: var(--gold);
+    box-shadow: 0 8px 20px rgba(184, 145, 58, 0.35);
+    transform: translateY(-2px);
     border-color: var(--gold);
-    color: var(--gold);
 }
 
-.f-btn.on,
-.f-btn:hover {
+.f-btn:hover:not(.on) {
     color: var(--gold);
-    border-color: var(--gold-line);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
 }
 
 .masonry {
@@ -1964,6 +1972,7 @@ footer {
 
     .filters {
         justify-content: flex-start;
+        flex-wrap: nowrap;
         overflow-x: auto;
         padding-bottom: 1rem;
         -ms-overflow-style: none; /* IE and Edge */
