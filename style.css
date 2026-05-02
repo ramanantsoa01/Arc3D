@@ -1332,26 +1332,41 @@ nav.scrolled .menu-label {
     margin-top: .2rem;
 }
 
-/* WHY */
+/* ==========================================================================
+   WHY (NOS ATOUTS) - ADVANCED MODERN REDESIGN
+   ========================================================================== */
 #why {
     padding: var(--section-pad) 0;
-    background: var(--bg);
+    background: #0a0a0a; /* Deep dark immersive background */
     position: relative;
     overflow: hidden;
+    color: #fff; /* Ensure text is light by default in this section */
 }
 
-#why::before {
-    content: "ARC'A";
+/* Subtle glowing orb in the background */
+#why::after {
+    content: '';
     position: absolute;
-    font-size: 20vw;
-    font-weight: 900;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(184, 145, 58, .05);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(184, 145, 58, 0.15) 0%, transparent 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    white-space: nowrap;
+    z-index: 0;
+}
+
+#why .lbl {
+    color: var(--gold);
+}
+
+#why .lbl::before, #why .lbl::after {
+    background: var(--gold);
+}
+
+#why .h2 {
+    color: #fff;
 }
 
 .why-w {
@@ -1359,82 +1374,83 @@ nav.scrolled .menu-label {
     margin: 0 auto;
     padding: 0 var(--container-px);
     position: relative;
+    z-index: 1; /* Above the glowing orb */
 }
 
 .why-grid-v3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    margin-top: 6rem;
+    gap: 2rem;
+    margin-top: 5rem;
 }
 
+/* Glassmorphism Bento Cards */
 .why-card-v3 {
-    display: flex;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    transition: all .5s var(--ease);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    padding: 3.5rem 3rem;
+    transition: all .5s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
-    border-radius: 16px;
     overflow: hidden;
-}
-
-.card-accent {
-    width: 80px;
-    background: var(--bg-2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--gold);
-    border-right: 1px solid var(--border);
-    transition: all .5s var(--ease);
-    flex-shrink: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .card-main {
-    flex: 1;
-    padding: 3rem;
-    transition: all .5s var(--ease);
+    position: relative;
+    z-index: 2;
+    padding: 0;
 }
 
 .card-head {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .card-ico {
-    width: 48px;
-    height: 48px;
-    background: var(--gold-dim);
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(184, 145, 58, 0.2), rgba(184, 145, 58, 0.05));
     color: var(--gold);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(184, 145, 58, 0.3);
     transition: all .5s var(--ease);
 }
 
 .why-name {
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .why-txt {
-    font-size: .95rem;
-    line-height: 1.8;
-    color: var(--text-2);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Hover Effects */
 .why-card-v3:hover {
-    transform: translateY(-12px) scale(1.02);
-    border-color: var(--gold);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    border-color: rgba(184, 145, 58, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(184, 145, 58, 0.1);
+}
+
+
+
+.why-card-v3:hover .card-ico {
+    background: var(--gold);
+    color: #000;
+    transform: scale(1.1) rotate(5deg);
 }
 
 /* Float animation for "live" feel */
@@ -1444,7 +1460,7 @@ nav.scrolled .menu-label {
 }
 
 .card-anim-wrapper {
-    display: flex;
+    display: block; /* Overriding previous flex layout */
     width: 100%;
     height: 100%;
     transition: all .5s var(--ease);
