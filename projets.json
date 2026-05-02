@@ -5,7 +5,7 @@
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
         "image": "assets/NouvelleConstruction/1.jpeg",
-        "height": "400px"
+        "height": "350px"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
         "image": "assets/NouvelleConstruction/2.jpeg",
-        "height": "350px"
+        "height": "400px"
     },
     {
         "id": 3,
@@ -37,7 +37,7 @@
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
         "image": "assets/NouvelleConstruction/5.jpeg",
-        "height": "420px"
+        "height": "380px"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
         "image": "assets/NouvelleConstruction/6.jpeg",
-        "height": "300px"
+        "height": "420px"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
         "image": "assets/NouvelleConstruction/7.jpeg",
-        "height": "380px"
+        "height": "360px"
     },
     {
         "id": 8,
@@ -77,14 +77,262 @@
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
         "image": "assets/NouvelleConstruction/10.jpeg",
-        "height": "390px"
+        "height": "300px"
+    },
+    {
+        "id": 11,
+        "title": "",
+        "category": "chambre-classique",
+        "categoryLabel": "Chambre Classique",
+        "image": "assets/ChambresClassique/1.jpeg",
+        "height": "350px"
+    },
+    {
+        "id": 12,
+        "title": "",
+        "category": "chambre-classique",
+        "categoryLabel": "Chambre Classique",
+        "image": "assets/ChambresClassique/2.jpeg",
+        "height": "400px"
     },
     {
         "id": 13,
-        "title": "Salon 'Espace & Lumière'",
+        "title": "",
+        "category": "chambre-classique",
+        "categoryLabel": "Chambre Classique",
+        "image": "assets/ChambresClassique/3.jpeg",
+        "height": "450px"
+    },
+    {
+        "id": 14,
+        "title": "",
+        "category": "chambre-parentale",
+        "categoryLabel": "Chambre Parentale",
+        "image": "assets/ChambresParentale/1.jpeg",
+        "height": "320px"
+    },
+    {
+        "id": 15,
+        "title": "",
+        "category": "chambre-parentale",
+        "categoryLabel": "Chambre Parentale",
+        "image": "assets/ChambresParentale/2.jpeg",
+        "height": "380px"
+    },
+    {
+        "id": 16,
+        "title": "",
+        "category": "chambre-parentale",
+        "categoryLabel": "Chambre Parentale",
+        "image": "assets/ChambresParentale/3.jpeg",
+        "height": "420px"
+    },
+    {
+        "id": 17,
+        "title": "",
+        "category": "chambre-parentale",
+        "categoryLabel": "Chambre Parentale",
+        "image": "assets/ChambresParentale/4.jpeg",
+        "height": "360px"
+    },
+    {
+        "id": 18,
+        "title": "",
+        "category": "chambre-parentale",
+        "categoryLabel": "Chambre Parentale",
+        "image": "assets/ChambresParentale/5.jpeg",
+        "height": "410px"
+    },
+    {
+        "id": 19,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/1.jpeg",
+        "height": "340px"
+    },
+    {
+        "id": 20,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/2.jpeg",
+        "height": "300px"
+    },
+    {
+        "id": 21,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/3.jpeg",
+        "height": "350px"
+    },
+    {
+        "id": 22,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/4.jpeg",
+        "height": "400px"
+    },
+    {
+        "id": 23,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/5.jpeg",
+        "height": "450px"
+    },
+    {
+        "id": 24,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/6.jpeg",
+        "height": "320px"
+    },
+    {
+        "id": 25,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/7.jpeg",
+        "height": "380px"
+    },
+    {
+        "id": 26,
+        "title": "",
+        "category": "coupe-3d",
+        "categoryLabel": "Coupe 3D",
+        "image": "assets/Coupe3d/8.jpeg",
+        "height": "420px"
+    },
+    {
+        "id": 27,
+        "title": "",
+        "category": "cuisine",
+        "categoryLabel": "Cuisine",
+        "image": "assets/Cuisine/1.jpeg",
+        "height": "360px"
+    },
+    {
+        "id": 28,
+        "title": "",
+        "category": "cuisine",
+        "categoryLabel": "Cuisine",
+        "image": "assets/Cuisine/2.jpeg",
+        "height": "410px"
+    },
+    {
+        "id": 29,
+        "title": "",
+        "category": "cuisine",
+        "categoryLabel": "Cuisine",
+        "image": "assets/Cuisine/3.jpeg",
+        "height": "340px"
+    },
+    {
+        "id": 30,
+        "title": "",
+        "category": "cuisine",
+        "categoryLabel": "Cuisine",
+        "image": "assets/Cuisine/4.jpeg",
+        "height": "300px"
+    },
+    {
+        "id": 31,
+        "title": "",
+        "category": "cuisine",
+        "categoryLabel": "Cuisine",
+        "image": "assets/Cuisine/5.jpeg",
+        "height": "350px"
+    },
+    {
+        "id": 32,
+        "title": "",
+        "category": "rehaussement",
+        "categoryLabel": "Rehaussement",
+        "image": "assets/Rehaussement/1.jpeg",
+        "height": "400px"
+    },
+    {
+        "id": 33,
+        "title": "",
+        "category": "rehaussement",
+        "categoryLabel": "Rehaussement",
+        "image": "assets/Rehaussement/2.jpeg",
+        "height": "450px"
+    },
+    {
+        "id": 34,
+        "title": "",
         "category": "interieur",
         "categoryLabel": "Rendu Intérieur",
-        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
+        "image": "assets/RenduInterieur/1.jpeg",
+        "height": "320px"
+    },
+    {
+        "id": 35,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/2.jpeg",
+        "height": "380px"
+    },
+    {
+        "id": 36,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/3.jpeg",
+        "height": "420px"
+    },
+    {
+        "id": 37,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/4.jpeg",
+        "height": "360px"
+    },
+    {
+        "id": 38,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/5.jpeg",
+        "height": "410px"
+    },
+    {
+        "id": 39,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/6.jpeg",
+        "height": "340px"
+    },
+    {
+        "id": 40,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/7.jpeg",
+        "height": "300px"
+    },
+    {
+        "id": 41,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/8.jpeg",
         "height": "350px"
+    },
+    {
+        "id": 42,
+        "title": "",
+        "category": "interieur",
+        "categoryLabel": "Rendu Intérieur",
+        "image": "assets/RenduInterieur/9.jpeg",
+        "height": "400px"
     }
 ]

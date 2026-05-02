@@ -18,7 +18,7 @@ async function initPortfolio() {
     try {
         const res = await fetch('projets.json');
         allProjects = await res.json();
-        renderProjects('all');
+        renderProjects('construction'); // Default to Nouvelle Construction
     } catch (err) {
         console.error("Error loading projects:", err);
     }
