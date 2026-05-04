@@ -119,7 +119,7 @@ nav.scrolled .nav-links a {
 }
 
 .nav-links a {
-    font-size: .85rem;
+    font-size: .95rem;
     font-weight: 500;
     letter-spacing: .12em;
     text-transform: uppercase;
@@ -149,7 +149,7 @@ nav.scrolled .nav-links a {
 }
 
 .nav-cta {
-    font-size: .62rem;
+    font-size: .75rem;
     font-weight: 600;
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -260,7 +260,7 @@ nav.scrolled .bar {
 }
 
 .menu-label {
-    font-size: .6rem;
+    font-size: .7rem;
     font-weight: 600;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -515,7 +515,7 @@ nav.scrolled .menu-label {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    font-size: .62rem;
+    font-size: .75rem;
     font-weight: 700;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -585,7 +585,7 @@ nav.scrolled .menu-label {
     align-items: center;
     justify-content: center;
     gap: .8rem;
-    font-size: .62rem;
+    font-size: .8rem;
     font-weight: 600;
     letter-spacing: .3em;
     text-transform: uppercase;
@@ -622,7 +622,7 @@ nav.scrolled .menu-label {
 }
 
 .hero-sub {
-    font-size: clamp(.8rem, 1.25vw, .9rem);
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
     font-weight: 300;
     font-style: italic;
     color: rgba(255, 255, 255, 0.85);
@@ -647,7 +647,7 @@ nav.scrolled .menu-label {
     align-items: center;
     gap: .9rem;
     font-family: var(--font);
-    font-size: .65rem;
+    font-size: .8rem;
     font-weight: 600;
     letter-spacing: .22em;
     text-transform: uppercase;
@@ -691,7 +691,7 @@ nav.scrolled .menu-label {
     align-items: center;
     gap: .7rem;
     font-family: var(--font);
-    font-size: .65rem;
+    font-size: .8rem;
     font-weight: 500;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -712,7 +712,7 @@ nav.scrolled .menu-label {
     display: inline-flex;
     align-items: center;
     gap: .8rem;
-    font-size: .5rem;
+    font-size: .85rem;
     font-weight: 600;
     letter-spacing: .3em;
     text-transform: uppercase;
@@ -873,7 +873,7 @@ nav.scrolled .menu-label {
 }
 
 .m-l {
-    font-size: .58rem;
+    font-size: .75rem;
     font-weight: 500;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -950,8 +950,8 @@ nav.scrolled .menu-label {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 3rem;
-    margin-bottom: 6rem;
+    gap: 4rem;
+    margin-bottom: 7rem;
 }
 
 .svc-head .h2 {
@@ -959,12 +959,12 @@ nav.scrolled .menu-label {
 }
 
 .svc-note {
-    max-width: 440px;
+    max-width: 460px;
     font-size: 1.05rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.85);
     font-weight: 300;
-    text-align: right;
+    text-align: left;
 }
 
 .svc-grid {
@@ -1053,7 +1053,7 @@ nav.scrolled .menu-label {
 .svc-tag {
     display: inline-block;
     align-self: flex-start;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -1127,7 +1127,7 @@ nav.scrolled .menu-label {
 
 .f-btn {
     font-family: var(--font);
-    font-size: .65rem;
+    font-size: .8rem;
     font-weight: 500;
     letter-spacing: .15em;
     text-transform: uppercase;
@@ -1220,7 +1220,7 @@ nav.scrolled .menu-label {
 }
 
 .m-cat {
-    font-size: .6rem;
+    font-size: .7rem;
     font-weight: 500;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -1310,7 +1310,7 @@ nav.scrolled .menu-label {
 }
 
 .p-k {
-    font-size: .55rem;
+    font-size: .75rem;
     font-weight: 600;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -1343,7 +1343,7 @@ nav.scrolled .menu-label {
 }
 
 .room-sub {
-    font-size: .65rem;
+    font-size: .75rem;
     font-weight: 400;
     color: var(--text-3);
     margin-top: .2rem;
@@ -1650,7 +1650,7 @@ nav.scrolled .menu-label {
 }
 
 .status-txt {
-    font-size: .65rem;
+    font-size: .75rem;
     font-weight: 600;
     letter-spacing: .02em;
     color: var(--text-2);
@@ -1668,7 +1668,7 @@ nav.scrolled .menu-label {
 }
 
 .extra-lbl {
-    font-size: .55rem;
+    font-size: .75rem;
     font-weight: 600;
     letter-spacing: .15em;
     text-transform: uppercase;
@@ -1762,7 +1762,7 @@ nav.scrolled .menu-label {
 }
 
 .card-lbl {
-    font-size: .55rem;
+    font-size: .75rem;
     font-weight: 600;
     letter-spacing: .2em;
     text-transform: uppercase;
@@ -1778,7 +1778,7 @@ nav.scrolled .menu-label {
 }
 
 .card-action {
-    font-size: .6rem;
+    font-size: .7rem;
     font-weight: 700;
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -1848,7 +1848,7 @@ footer {
 }
 
 .foot-copy {
-    font-size: .62rem;
+    font-size: .75rem;
     color: #ffffff;
     letter-spacing: .08em;
 }
@@ -1860,7 +1860,7 @@ footer {
 }
 
 .foot-links a {
-    font-size: .62rem;
+    font-size: .75rem;
     letter-spacing: .15em;
     text-transform: uppercase;
     color: #ffffff;
@@ -1896,7 +1896,7 @@ footer {
 }
 
 .credit-txt {
-    font-size: 0.55rem;
+    font-size: 0.65rem;
     font-weight: 400;
     letter-spacing: 0.25em;
     text-transform: uppercase;
