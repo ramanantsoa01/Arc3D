@@ -24,12 +24,19 @@ async function initPortfolio() {
     }
 }
 
-function renderProjects(cat) {
+let currentMainCat = 'construction';
+let currentSubCat = 'all';
+
+function renderProjects(cat, subCat = 'all') {
     const container = document.getElementById('masonryContainer');
     if (!container) return;
 
     container.innerHTML = '';
-    const filtered = cat === 'all' ? allProjects : allProjects.filter(p => p.category === cat);
+    let filtered = cat === 'all' ? allProjects : allProjects.filter(p => p.category === cat);
+    
+    if (subCat !== 'all') {
+        filtered = filtered.filter(p => p.subCategory === subCat);
+    }
 
     filtered.forEach((p, index) => {
         const item = document.createElement('div');
@@ -82,9 +89,29 @@ function renderProjects(cat) {
 }
 
 function doFilter(btn, cat) {
+    currentMainCat = cat;
+    currentSubCat = 'all';
+
     document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('on'));
     btn.classList.add('on');
-    renderProjects(cat);
+
+    const subFilters = document.getElementById('subFilters');
+    if (cat === 'interieur') {
+        subFilters.classList.add('active');
+        // Reset sub buttons (none selected by default)
+        document.querySelectorAll('.sf-btn').forEach(b => b.classList.remove('on'));
+    } else {
+        subFilters.classList.remove('active');
+    }
+
+    renderProjects(cat, 'all');
+}
+
+function doSubFilter(btn, sub) {
+    currentSubCat = sub;
+    document.querySelectorAll('.sf-btn').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    renderProjects(currentMainCat, sub);
 }
 
 // Initial Load

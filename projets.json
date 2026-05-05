@@ -57,64 +57,72 @@
     {
         "id": 11,
         "title": "",
-        "category": "chambre-classique",
-        "categoryLabel": "Chambre Classique",
+        "category": "interieur",
+        "subCategory": "classique",
+        "categoryLabel": "Maison Classique",
         "image": "assets/ChambresClassique/1.jpeg",
         "height": "350px"
     },
     {
         "id": 12,
         "title": "",
-        "category": "chambre-classique",
-        "categoryLabel": "Chambre Classique",
+        "category": "interieur",
+        "subCategory": "classique",
+        "categoryLabel": "Maison Classique",
         "image": "assets/ChambresClassique/2.jpeg",
         "height": "400px"
     },
     {
         "id": 13,
         "title": "",
-        "category": "chambre-classique",
-        "categoryLabel": "Chambre Classique",
+        "category": "interieur",
+        "subCategory": "classique",
+        "categoryLabel": "Maison Classique",
         "image": "assets/ChambresClassique/3.jpeg",
         "height": "450px"
     },
     {
         "id": 14,
         "title": "",
-        "category": "chambre-parentale",
-        "categoryLabel": "Chambre Parentale",
+        "category": "interieur",
+        "subCategory": "parentale",
+        "categoryLabel": "Maison Parentale",
         "image": "assets/ChambresParentale/1.jpeg",
         "height": "320px"
     },
     {
         "id": 15,
         "title": "",
-        "category": "chambre-parentale",
-        "categoryLabel": "Chambre Parentale",
+        "category": "interieur",
+        "subCategory": "parentale",
+        "categoryLabel": "Maison Parentale",
         "image": "assets/ChambresParentale/2.jpeg",
         "height": "380px"
     },
     {
         "id": 16,
         "title": "",
-        "category": "chambre-parentale",
-        "categoryLabel": "Chambre Parentale",
+        "category": "interieur",
+        "subCategory": "parentale",
+        "categoryLabel": "Maison Parentale",
         "image": "assets/ChambresParentale/3.jpeg",
         "height": "420px"
     },
     {
         "id": 17,
         "title": "",
-        "category": "chambre-parentale",
-        "categoryLabel": "Chambre Parentale",
+        "category": "interieur",
+        "subCategory": "parentale",
+        "categoryLabel": "Maison Parentale",
         "image": "assets/ChambresParentale/4.jpeg",
         "height": "360px"
     },
     {
         "id": 18,
         "title": "",
-        "category": "chambre-parentale",
-        "categoryLabel": "Chambre Parentale",
+        "category": "interieur",
+        "subCategory": "parentale",
+        "categoryLabel": "Maison Parentale",
         "image": "assets/ChambresParentale/5.jpeg",
         "height": "410px"
     },
@@ -185,7 +193,8 @@
     {
         "id": 27,
         "title": "",
-        "category": "cuisine",
+        "category": "interieur",
+        "subCategory": "cuisine",
         "categoryLabel": "Cuisine",
         "image": "assets/Cuisine/1.jpeg",
         "height": "360px"
@@ -193,7 +202,8 @@
     {
         "id": 28,
         "title": "",
-        "category": "cuisine",
+        "category": "interieur",
+        "subCategory": "cuisine",
         "categoryLabel": "Cuisine",
         "image": "assets/Cuisine/2.jpeg",
         "height": "410px"
@@ -201,7 +211,8 @@
     {
         "id": 29,
         "title": "",
-        "category": "cuisine",
+        "category": "interieur",
+        "subCategory": "cuisine",
         "categoryLabel": "Cuisine",
         "image": "assets/Cuisine/3.jpeg",
         "height": "340px"
@@ -209,7 +220,8 @@
     {
         "id": 30,
         "title": "",
-        "category": "cuisine",
+        "category": "interieur",
+        "subCategory": "cuisine",
         "categoryLabel": "Cuisine",
         "image": "assets/Cuisine/4.jpeg",
         "height": "300px"
@@ -217,7 +229,8 @@
     {
         "id": 31,
         "title": "",
-        "category": "cuisine",
+        "category": "interieur",
+        "subCategory": "cuisine",
         "categoryLabel": "Cuisine",
         "image": "assets/Cuisine/5.jpeg",
         "height": "350px"
@@ -258,6 +271,7 @@
         "id": 37,
         "title": "",
         "category": "interieur",
+        "subCategory": "interieur",
         "categoryLabel": "Rendu Intérieur",
         "image": "assets/RenduInterieur/4.jpeg",
         "height": "360px"
@@ -266,6 +280,7 @@
         "id": 38,
         "title": "",
         "category": "interieur",
+        "subCategory": "interieur",
         "categoryLabel": "Rendu Intérieur",
         "image": "assets/RenduInterieur/5.jpeg",
         "height": "410px"
@@ -274,6 +289,7 @@
         "id": 39,
         "title": "",
         "category": "interieur",
+        "subCategory": "interieur",
         "categoryLabel": "Rendu Intérieur",
         "image": "assets/RenduInterieur/6.jpeg",
         "height": "340px"
@@ -282,6 +298,7 @@
         "id": 40,
         "title": "",
         "category": "interieur",
+        "subCategory": "interieur",
         "categoryLabel": "Rendu Intérieur",
         "image": "assets/RenduInterieur/7.jpeg",
         "height": "300px"
@@ -290,6 +307,7 @@
         "id": 41,
         "title": "",
         "category": "interieur",
+        "subCategory": "interieur",
         "categoryLabel": "Rendu Intérieur",
         "image": "assets/RenduInterieur/8.jpeg",
         "height": "350px"
@@ -298,6 +316,7 @@
         "id": 42,
         "title": "",
         "category": "interieur",
+        "subCategory": "interieur",
         "categoryLabel": "Rendu Intérieur",
         "image": "assets/RenduInterieur/9.jpeg",
         "height": "400px"

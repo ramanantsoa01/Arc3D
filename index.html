@@ -211,9 +211,12 @@
                     <button class="f-btn" onclick="doFilter(this,'coupe-3d')">Coupe 3D</button>
                     <button class="f-btn" onclick="doFilter(this,'rehaussement')">Rehaussement</button>
                     <button class="f-btn" onclick="doFilter(this,'interieur')">Rendu intérieur</button>
-                    <button class="f-btn" onclick="doFilter(this,'chambre-parentale')">Chambre Parentale</button>
-                    <button class="f-btn" onclick="doFilter(this,'chambre-classique')">Chambre Classique</button>
-                    <button class="f-btn" onclick="doFilter(this,'cuisine')">Cuisine</button>
+                </div>
+                <div class="sub-filters" id="subFilters">
+                    <button class="sf-btn" onclick="doSubFilter(this, 'interieur')">Intérieur</button>
+                    <button class="sf-btn" onclick="doSubFilter(this, 'parentale')">Maison Parentale</button>
+                    <button class="sf-btn" onclick="doSubFilter(this, 'classique')">Maison Classique</button>
+                    <button class="sf-btn" onclick="doSubFilter(this, 'cuisine')">Cuisine</button>
                 </div>
             </div>
             <div class="masonry reveal" id="masonryContainer">
