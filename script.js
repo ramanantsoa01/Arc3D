@@ -48,7 +48,18 @@ function renderProjects(cat, subCat = 'all') {
         const h = p.height || '350px';
 
         let mediaHtml = '';
-        if (p.isGroup && p.images && p.images.length > 1) {
+        if (p.isGroup && p.images && p.images.length === 2) {
+            mediaHtml = `
+                <div class="m-split-container" style="height: ${h};">
+                    <div class="m-split-pane split-left" style="background-image: url('${p.images[0]}');"></div>
+                    <div class="m-split-pane split-right" style="background-image: url('${p.images[1]}');"></div>
+                    <div class="m-split-divider">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+            `;
+        } else if (p.isGroup && p.images && p.images.length > 2) {
             const mainImg = p.images[0];
             const subImgs = p.images.slice(1, 4); // Show up to 3 thumbnails
             mediaHtml = `
@@ -63,6 +74,7 @@ function renderProjects(cat, subCat = 'all') {
             const thumb = p.isGroup ? p.images[0] : p.image;
             mediaHtml = `<div class="m-img" style="background-image: url('${thumb}'); height: ${h};"></div>`;
         }
+
         
         item.innerHTML = `
             ${mediaHtml}

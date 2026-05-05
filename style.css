@@ -1458,6 +1458,63 @@ nav.scrolled .menu-label {
     transform: scale(1.08);
 }
 
+/* Split Layout for 2 Photos */
+.m-split-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.m-split-pane {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.split-left {
+    border-right: 1px solid var(--bg);
+}
+
+.split-right {
+    border-left: 1px solid var(--bg);
+}
+
+.m-split-container:hover .split-left:hover {
+    flex: 2.5;
+}
+
+.m-split-container:hover .split-right:hover {
+    flex: 2.5;
+}
+
+.m-split-divider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 30px;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #fff;
+    pointer-events: none;
+    z-index: 3;
+    transition: opacity 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.m-item:hover .m-split-divider {
+    opacity: 0;
+}
+
 /* PROJECT */
 #project {
     padding: var(--section-pad) 0;
