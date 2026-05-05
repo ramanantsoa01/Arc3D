@@ -1015,12 +1015,33 @@ nav.scrolled .menu-label {
 }
 
 .svc-num {
-    font-size: 0.75rem;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    height: 1.1em;
+    overflow: hidden;
+    font-size: 0.85rem;
     font-weight: 800;
     color: var(--gold);
     letter-spacing: 0.3em;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
+}
+
+.svc-num-inner {
+    transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.svc-num::after {
+    content: attr(data-num);
+    color: #fff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+    transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.svc-card:hover .svc-num-inner,
+.svc-card:hover .svc-num::after {
+    transform: translateY(-100%);
 }
 
 .svc-icon {

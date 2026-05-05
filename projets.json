@@ -15,44 +15,36 @@
         "height": "450px"
     },
     {
+        "id": 2,
+        "title": "Collection de maison",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/5.jpeg",
+            "assets/NouvelleConstruction/6.jpeg"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 3,
+        "title": "Collection de maison",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/2.jpeg",
+            "assets/NouvelleConstruction/3.jpeg"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
         "id": 4,
         "title": "",
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/2.jpeg",
-        "height": "320px"
-    },
-    {
-        "id": 5,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/5.jpeg",
-        "height": "380px"
-    },
-    {
-        "id": 6,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/6.jpeg",
-        "height": "420px"
-    },
-    {
-        "id": 7,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/3.jpeg",
-        "height": "360px"
-    },
-    {
-        "id": 10,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
         "image": "assets/NouvelleConstruction/10.jpeg",
-        "height": "300px"
+        "height": "350px"
     },
     {
         "id": 11,
