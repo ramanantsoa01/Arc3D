@@ -1175,6 +1175,16 @@ nav.scrolled .menu-label {
     .f-btn {
         font-size: 0.7rem;
         padding: 0.7rem 1.4rem;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--border);
+    }
+
+    .f-btn.on {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #fff;
     }
 }
 
@@ -1244,34 +1254,40 @@ nav.scrolled .menu-label {
         justify-content: flex-start;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        padding: 0.8rem var(--container-px);
-        gap: 0.5rem;
+        padding: 0.5rem var(--container-px) 1.5rem;
+        gap: 0.8rem;
         background: transparent;
-        border-left: none;
-        border-right: none;
-        scrollbar-width: none; /* Firefox */
+        border: none;
+        scrollbar-width: none;
+        position: relative;
     }
     
-    .sub-filters::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
-    }
+    .sub-filters::-webkit-scrollbar { display: none; }
 
     .sub-filters.active {
-        max-height: 120px;
-        margin-top: 1.5rem;
-        padding-bottom: 1rem;
+        max-height: 140px;
+        margin-top: 1rem;
+        display: flex;
     }
 
     .sf-btn {
-        font-size: 0.65rem;
-        padding: 0.6rem 1rem;
-        background: #fff;
-        border: 1px solid var(--border);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.7rem 1.2rem;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        color: var(--text-2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        border-radius: 40px;
     }
     
     .sf-btn.on {
+        background: var(--gold);
+        color: #fff;
         border-color: var(--gold);
+        box-shadow: 0 6px 15px rgba(184, 145, 58, 0.25);
     }
 }
 
