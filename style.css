@@ -974,45 +974,86 @@ nav.scrolled .menu-label {
 }
 
 .svc-card {
+    position: relative;
+    perspective: 1500px;
+    /* Height must be defined so the absolute back face matches the front.
+       Or we make the front relative and give it padding. */
+}
+
+.svc-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-style: preserve-3d;
+}
+
+.svc-card:hover {
+    transform: translateY(-20px);
+}
+
+.svc-card:hover .svc-card-inner {
+    transform: rotateY(180deg);
+}
+
+.svc-card-front, .svc-card-back {
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.svc-card-front {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.06);
     padding: 4.5rem 3rem;
-    position: relative;
-    transition: all .7s cubic-bezier(0.16, 1, 0.3, 1);
-    overflow: hidden;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
-    border-radius: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.svc-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.svc-back-ov {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .svc-card::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
             rgba(184, 145, 58, 0.1),
             transparent 40%);
     opacity: 0;
     transition: opacity .5s ease;
     pointer-events: none;
-    z-index: 1;
-}
-
-.svc-card:hover {
-    transform: translateY(-20px);
-    border-color: rgba(184, 145, 58, 0.4);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    border-radius: 32px;
 }
 
 .svc-card:hover::before {
     opacity: 1;
 }
+
 
 .svc-num {
     position: relative;
