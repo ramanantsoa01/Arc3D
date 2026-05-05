@@ -467,10 +467,23 @@
     <!-- LIGHTBOX -->
     <div id="lightbox" class="lightbox">
         <div class="lb-controls">
+            <div id="lbCounter" class="lb-counter">1 / 1</div>
             <button class="lb-btn" id="lbZoomOut" title="Zoom Arrière">−</button>
             <button class="lb-btn" id="lbZoomIn" title="Zoom Avant">+</button>
             <button class="lb-btn" id="lbClose" title="Fermer">×</button>
         </div>
+        
+        <button class="lb-nav-btn lb-prev" id="lbPrev" aria-label="Précédent">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="lb-nav-btn lb-next" id="lbNext" aria-label="Suivant">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+
         <div class="lb-content" id="lbContent">
             <img id="lbImg" src="" alt="Project Preview">
         </div>

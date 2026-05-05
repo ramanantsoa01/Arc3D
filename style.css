@@ -1228,6 +1228,41 @@ nav.scrolled .menu-label {
     margin-top: .2rem;
 }
 
+/* Gallery Layout for Grouped Items */
+.m-img-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.m-img-main {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform .8s var(--ease);
+}
+
+.m-img-subs {
+    display: flex;
+    gap: 4px;
+    height: 100px; /* Adjust height of thumbnails */
+}
+
+.m-img-sub {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform .8s var(--ease);
+}
+
+.m-item:hover .m-img-main,
+.m-item:hover .m-img-sub {
+    transform: scale(1.08);
+}
+
 /* PROJECT */
 #project {
     padding: var(--section-pad) 0;
@@ -2343,6 +2378,49 @@ footer {
     transform: scale(1.1);
 }
 
+.lb-counter {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.lb-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s var(--ease);
+    z-index: 10001;
+    backdrop-filter: blur(10px);
+}
+
+.lb-nav-btn:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #000;
+}
+
+.lb-prev { left: 2rem; }
+.lb-next { right: 2rem; }
+
+.lb-nav-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 @media(max-width: 768px) {
     .lb-controls {
         top: auto;
@@ -2352,7 +2430,21 @@ footer {
         background: rgba(0, 0, 0, 0.5);
         padding: 0.5rem 1rem;
         border-radius: 50px;
+        width: max-content;
     }
+
+    .lb-counter {
+        margin-right: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .lb-nav-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .lb-prev { left: 1rem; }
+    .lb-next { right: 1rem; }
 
     #lbImg {
         max-width: 95vw;

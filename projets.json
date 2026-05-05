@@ -1,26 +1,17 @@
 [
     {
         "id": 1,
-        "title": "",
+        "title": "Collection de maison",
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/1.jpeg",
-        "height": "350px"
-    },
-    {
-        "id": 2,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/2.jpeg",
-        "height": "400px"
-    },
-    {
-        "id": 3,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/3.jpeg",
+        "images": [
+            "assets/NouvelleConstruction/1.jpeg",
+            "assets/NouvelleConstruction/4.jpeg",
+            "assets/NouvelleConstruction/7.jpeg",
+            "assets/NouvelleConstruction/8.jpeg",
+            "assets/NouvelleConstruction/9.jpeg"
+        ],
+        "isGroup": true,
         "height": "450px"
     },
     {
@@ -28,7 +19,7 @@
         "title": "",
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/4.jpeg",
+        "image": "assets/NouvelleConstruction/2.jpeg",
         "height": "320px"
     },
     {
@@ -52,24 +43,8 @@
         "title": "",
         "category": "construction",
         "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/7.jpeg",
+        "image": "assets/NouvelleConstruction/3.jpeg",
         "height": "360px"
-    },
-    {
-        "id": 8,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/8.jpeg",
-        "height": "410px"
-    },
-    {
-        "id": 9,
-        "title": "",
-        "category": "construction",
-        "categoryLabel": "Nouvelle Construction",
-        "image": "assets/NouvelleConstruction/9.jpeg",
-        "height": "340px"
     },
     {
         "id": 10,
@@ -264,28 +239,20 @@
         "height": "450px"
     },
     {
-        "id": 34,
+        "id": 33,
         "title": "",
-        "category": "interieur",
-        "categoryLabel": "Rendu Intérieur",
-        "image": "assets/RenduInterieur/1.jpeg",
-        "height": "320px"
+        "category": "rehaussement",
+        "categoryLabel": "Rehaussement",
+        "image": "assets/Rehaussement/20.jpeg",
+        "height": "450px"
     },
     {
-        "id": 35,
+        "id": 43,
         "title": "",
-        "category": "interieur",
-        "categoryLabel": "Rendu Intérieur",
-        "image": "assets/RenduInterieur/2.jpeg",
-        "height": "380px"
-    },
-    {
-        "id": 36,
-        "title": "",
-        "category": "interieur",
-        "categoryLabel": "Rendu Intérieur",
-        "image": "assets/RenduInterieur/3.jpeg",
-        "height": "420px"
+        "category": "rehaussement",
+        "categoryLabel": "Rehaussement",
+        "image": "assets/Rehaussement/10.jpeg",
+        "height": "450px"
     },
     {
         "id": 37,

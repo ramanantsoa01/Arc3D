@@ -33,14 +33,32 @@ function renderProjects(cat) {
 
     filtered.forEach((p, index) => {
         const item = document.createElement('div');
-        item.className = 'm-item reveal';
+        item.className = `m-item reveal ${p.isGroup ? 'is-group' : ''}`;
         item.style.transitionDelay = `${index * 0.1}s`;
         item.dataset.cat = p.category;
         
         const hasTitle = p.title && p.title.trim() !== "";
+        const h = p.height || '350px';
+
+        let mediaHtml = '';
+        if (p.isGroup && p.images && p.images.length > 1) {
+            const mainImg = p.images[0];
+            const subImgs = p.images.slice(1, 4); // Show up to 3 thumbnails
+            mediaHtml = `
+                <div class="m-img-group" style="height: ${h};">
+                    <div class="m-img-main" style="background-image: url('${mainImg}');"></div>
+                    <div class="m-img-subs">
+                        ${subImgs.map(img => `<div class="m-img-sub" style="background-image: url('${img}');"></div>`).join('')}
+                    </div>
+                </div>
+            `;
+        } else {
+            const thumb = p.isGroup ? p.images[0] : p.image;
+            mediaHtml = `<div class="m-img" style="background-image: url('${thumb}'); height: ${h};"></div>`;
+        }
         
         item.innerHTML = `
-            <div class="m-img" style="background-image: url('${p.image}'); height: ${p.height || '350px'};"></div>
+            ${mediaHtml}
             <div class="m-ov">
                 ${hasTitle ? `<div class="m-line"></div>` : ''}
                 ${hasTitle ? `<div class="m-title">${p.title}</div>` : ''}
@@ -50,7 +68,8 @@ function renderProjects(cat) {
         
         // Open lightbox on click
         item.addEventListener('click', () => {
-            openLightbox(p.image);
+            const imagesToLoad = p.isGroup ? p.images : [p.image];
+            openLightbox(imagesToLoad);
         });
         
         container.appendChild(item);
@@ -118,37 +137,86 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     });
 });
 
-/* ── LIGHTBOX / ZOOM ── */
-const lightbox = document.getElementById('lightbox');
-const lbImg = document.getElementById('lbImg');
-const btnZoomIn = document.getElementById('lbZoomIn');
-const btnZoomOut = document.getElementById('lbZoomOut');
-const btnClose = document.getElementById('lbClose');
+/* ── LIGHTBOX / ZOOM / CAROUSEL ── */
+const lightbox    = document.getElementById('lightbox');
+const lbImg       = document.getElementById('lbImg');
+const btnZoomIn   = document.getElementById('lbZoomIn');
+const btnZoomOut  = document.getElementById('lbZoomOut');
+const btnClose    = document.getElementById('lbClose');
+const btnPrev     = document.getElementById('lbPrev');
+const btnNext     = document.getElementById('lbNext');
+const lbCounter   = document.getElementById('lbCounter');
 
-let currentZoom = 1;
-const zoomStep = 0.4;
-const maxZoom = 4;
-const minZoom = 0.5;
+let currentZoom   = 1;
+const zoomStep    = 0.4;
+const maxZoom     = 4;
+const minZoom     = 0.5;
 
-let isDragging = false;
+let isDragging    = false;
 let startX, startY, translateX = 0, translateY = 0;
 
-function openLightbox(imgSrc) {
+let currentGallery = [];
+let currentIndex   = 0;
+
+function openLightbox(images, index = 0) {
     if(!lightbox || !lbImg) return;
-    lbImg.src = imgSrc;
+    
+    currentGallery = images;
+    currentIndex   = index;
+    
+    updateLightboxContent();
+    
     currentZoom = 1;
     translateX = 0;
     translateY = 0;
     updateImgTransform();
+    
     lightbox.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    document.body.style.overflow = 'hidden'; 
+}
+
+function updateLightboxContent() {
+    lbImg.src = currentGallery[currentIndex];
+    
+    // Update Counter
+    if (lbCounter) {
+        lbCounter.textContent = `${currentIndex + 1} / ${currentGallery.length}`;
+        lbCounter.style.display = currentGallery.length > 1 ? 'flex' : 'none';
+    }
+    
+    // Show/Hide Nav Buttons
+    if (btnPrev && btnNext) {
+        const isMulti = currentGallery.length > 1;
+        btnPrev.classList.toggle('hidden', !isMulti);
+        btnNext.classList.toggle('hidden', !isMulti);
+    }
+}
+
+function nextImage() {
+    if (currentGallery.length <= 1) return;
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    updateLightboxContent();
+    resetZoom();
+}
+
+function prevImage() {
+    if (currentGallery.length <= 1) return;
+    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    updateLightboxContent();
+    resetZoom();
+}
+
+function resetZoom() {
+    currentZoom = 1;
+    translateX = 0;
+    translateY = 0;
+    updateImgTransform();
 }
 
 function closeLightbox() {
     if(!lightbox) return;
     lightbox.classList.remove('active');
     document.body.style.overflow = '';
-    // Small delay to clear src after fade out
     setTimeout(() => { lbImg.src = ''; }, 400);
 }
 
@@ -159,6 +227,10 @@ function updateImgTransform() {
 if(lightbox) {
     btnClose.addEventListener('click', closeLightbox);
     
+    // Navigation
+    if(btnPrev) btnPrev.addEventListener('click', (e) => { e.stopPropagation(); prevImage(); });
+    if(btnNext) btnNext.addEventListener('click', (e) => { e.stopPropagation(); nextImage(); });
+
     // Close on background click
     lightbox.addEventListener('click', (e) => {
         if(e.target === lightbox || e.target.classList.contains('lb-content')) {
@@ -167,14 +239,16 @@ if(lightbox) {
     });
 
     // Zoom Controls
-    btnZoomIn.addEventListener('click', () => {
+    btnZoomIn.addEventListener('click', (e) => {
+        e.stopPropagation();
         if (currentZoom < maxZoom) {
             currentZoom += zoomStep;
             updateImgTransform();
         }
     });
 
-    btnZoomOut.addEventListener('click', () => {
+    btnZoomOut.addEventListener('click', (e) => {
+        e.stopPropagation();
         if (currentZoom > minZoom) {
             currentZoom -= zoomStep;
             updateImgTransform();
@@ -210,11 +284,13 @@ if(lightbox) {
         lbImg.style.cursor = 'grab';
     });
 
-    // Close on Escape
+    // Keyboard support
     document.addEventListener('keydown', e => {
-        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-            closeLightbox();
-        }
+        if (!lightbox.classList.contains('active')) return;
+        
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
     });
 }
 
