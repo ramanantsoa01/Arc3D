@@ -18,13 +18,13 @@ async function initPortfolio() {
     try {
         const res = await fetch('projets.json');
         allProjects = await res.json();
-        renderProjects('construction'); // Default to Nouvelle Construction
+        renderProjects('dossier-administratif'); // Default to Dossiers Administratifs Pris en Charge
     } catch (err) {
         console.error("Error loading projects:", err);
     }
 }
 
-let currentMainCat = 'construction';
+let currentMainCat = 'dossier-administratif';
 let currentSubCat = 'all';
 
 function renderProjects(cat, subCat = 'all') {
