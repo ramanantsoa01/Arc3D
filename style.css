@@ -789,6 +789,9 @@ nav.scrolled .menu-label {
 
 .about-imgbox {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .about-imgbox::before {
@@ -821,6 +824,12 @@ nav.scrolled .menu-label {
     display: flex;
     align-items: flex-end;
     padding: 2rem;
+    border-radius: 4px;
+}
+
+.about-ph-v2 {
+    background-image: url('assets/sectionApropos2.jpeg');
+    aspect-ratio: 1.4;
 }
 
 .about-badge {
