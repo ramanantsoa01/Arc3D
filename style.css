@@ -1933,9 +1933,10 @@ nav.scrolled .menu-label {
 .cont-p {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1.8;
-    color: var(--text-2);
+    line-height: 1.7;
+    color: var(--text);
     margin: 2rem 0;
+    max-width: 90%;
 }
 
 .cont-status {
@@ -1945,7 +1946,6 @@ nav.scrolled .menu-label {
     background: var(--bg-2);
     padding: .6rem 1.2rem;
     border-radius: 50px;
-    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
