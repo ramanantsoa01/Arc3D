@@ -1011,6 +1011,7 @@ nav.scrolled .menu-label {
     -webkit-backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     position: relative;
     z-index: 2;
 }
@@ -1092,8 +1093,21 @@ nav.scrolled .menu-label {
     transition: transform .6s var(--ease);
 }
 
+.svc-icon-img {
+    width: auto;
+    height: 4.5rem;
+    margin-bottom: 2.5rem;
+    display: block;
+    transition: transform .6s var(--ease);
+    object-fit: contain;
+}
+
 .svc-card:hover .svc-icon {
     transform: scale(1.25) rotate(5deg);
+}
+
+.svc-card:hover .svc-icon-img {
+    transform: scale(1.1) rotate(3deg);
 }
 
 .svc-name {

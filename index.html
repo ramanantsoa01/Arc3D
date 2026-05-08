@@ -125,7 +125,7 @@
             <div class="hero-tag">Visualisation 3D & Dossiers de Permis</div>
             <h1 class="hero-title">Donnez Vie à vos Projets.<br>Sécurisez votre <span class="g">Réussite</span>.</h1>
             <p class="hero-sub">De la conception 3D photoréaliste au montage complet de vos dossiers administratifs.
-                Précision, expertise et conformité garanties pour tous vos projets en France.</p>
+                Précision, expertise et conformité garanties pour tous vos projets.</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn-gold"><span>Démarrer un projet</span><span class="arrow">→</span></a>
                 <!-- <a href="#services" class="btn-out">Découvrir nos services →</a> -->
@@ -183,21 +183,23 @@
                             <div class="svc-num" data-num="01">
                                 <div class="svc-num-inner">01</div>
                             </div>
-                            <span class="svc-icon">📐</span>
+                            <img src="assets/service1.jpeg" alt="Dossiers Administratifs" class="svc-icon-img">
                             <div class="svc-name">Dossiers Administratifs</div>
                             <p class="svc-desc">Déclaration préalable (DP) et Permis de construire (PC) traités avec une
                                 précision réglementaire absolue. Délai garanti de 3 à 10 jours ouvrés.</p>
                             <span class="svc-tag">3–10 jours</span>
                         </div>
-                        <div class="svc-card-back" style="background-image: url('assets/NouvelleConstruction/1.jpeg');">
-                            <div class="svc-back-ov">
+                        <div class="svc-card-back"
+                            style="background-image: url('assets/ServiceBackground/Back1.jpeg');">
+                            <!-- <div class="svc-back-ov">
                                 <div class="svc-name">01. Dossiers</div>
-                                <p class="svc-desc">Expertise réglementaire complète pour vos projets architecturaux.</p>
-                            </div>
+                                <p class="svc-desc">Expertise réglementaire complète pour vos projets architecturaux.
+                                </p>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Card 2 -->
                 <div class="svc-card reveal d2">
                     <div class="svc-card-inner">
@@ -205,21 +207,22 @@
                             <div class="svc-num" data-num="02">
                                 <div class="svc-num-inner">02</div>
                             </div>
-                            <span class="svc-icon">🏛</span>
+                            <img src="assets/service2.jpeg" alt="Modélisation 3D" class="svc-icon-img">
                             <div class="svc-name">Modélisation 3D</div>
-                            <p class="svc-desc">Reconstruction tridimensionnelle fidèle à chaque détail architectural. Plans,
-                                volumes, matériaux — chaque élément est modélisé avec exactitude.</p>
+                            <p class="svc-desc">Reconstruction tridimensionnelle fidèle à chaque détail architectural.
+                                Plans, volumes, matériaux - chaque élément est modélisé avec exactitude.</p>
                             <span class="svc-tag">Haute précision</span>
                         </div>
-                        <div class="svc-card-back" style="background-image: url('assets/NouvelleConstruction/4.jpeg');">
-                            <div class="svc-back-ov">
+                        <div class="svc-card-back"
+                            style="background-image: url('assets/ServiceBackground/Back2.jpeg');">
+                            <!-- <div class="svc-back-ov">
                                 <div class="svc-name">02. Modélisation</div>
                                 <p class="svc-desc">Donnez du volume et de la précision à vos esquisses 2D.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Card 3 -->
                 <div class="svc-card reveal d3">
                     <div class="svc-card-inner">
@@ -227,17 +230,18 @@
                             <div class="svc-num" data-num="03">
                                 <div class="svc-num-inner">03</div>
                             </div>
-                            <span class="svc-icon">✨</span>
+                            <img src="assets/service3.jpeg" alt="Rendus Photoréalistes" class="svc-icon-img">
                             <div class="svc-name">Rendus Photoréalistes</div>
-                            <p class="svc-desc">Des visuels d'une qualité photographique qui donnent vie à vos projets avant
-                                même leur construction. Lumière, matière, ambiance — tout y est.</p>
+                            <p class="svc-desc">Des visuels d'une qualité photographique qui donnent vie à vos projets
+                                avant même leur construction. Lumière, matière, ambiance - tout y est.</p>
                             <span class="svc-tag">Niveau européen</span>
                         </div>
-                        <div class="svc-card-back" style="background-image: url('assets/RenduInterieur/4.jpeg');">
-                            <div class="svc-back-ov">
+                        <div class="svc-card-back"
+                            style="background-image: url('assets/ServiceBackground/Back3.jpeg');">
+                            <!-- <div class="svc-back-ov">
                                 <div class="svc-name">03. Rendus</div>
                                 <p class="svc-desc">Sublimez vos projets avec des images à couper le souffle.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -519,14 +523,16 @@
             <button class="lb-btn" id="lbZoomIn" title="Zoom Avant">+</button>
             <button class="lb-btn" id="lbClose" title="Fermer">×</button>
         </div>
-        
+
         <button class="lb-nav-btn lb-prev" id="lbPrev" aria-label="Précédent">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
         </button>
         <button class="lb-nav-btn lb-next" id="lbNext" aria-label="Suivant">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
         </button>
