@@ -824,7 +824,7 @@ nav.scrolled .menu-label {
     display: flex;
     align-items: flex-end;
     padding: 2rem;
-    border-radius: 4px;
+    border-radius: 30px;
 }
 
 .about-ph-v2 {
@@ -2377,9 +2377,9 @@ footer {
 
     .about-ph {
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
         aspect-ratio: 1;
-        /* Square format, slightly smaller than portrait */
         border-radius: 12px;
     }
 
