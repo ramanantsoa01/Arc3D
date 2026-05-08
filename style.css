@@ -996,7 +996,8 @@ nav.scrolled .menu-label {
     transform: rotateY(180deg);
 }
 
-.svc-card-front, .svc-card-back {
+.svc-card-front,
+.svc-card-back {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 32px;
@@ -1246,8 +1247,11 @@ nav.scrolled .menu-label {
         width: 100vw;
         scrollbar-width: none;
     }
-    .filters::-webkit-scrollbar { display: none; }
-    
+
+    .filters::-webkit-scrollbar {
+        display: none;
+    }
+
     .f-btn {
         font-size: 0.7rem;
         padding: 0.7rem 1.4rem;
@@ -1337,8 +1341,10 @@ nav.scrolled .menu-label {
         scrollbar-width: none;
         position: relative;
     }
-    
-    .sub-filters::-webkit-scrollbar { display: none; }
+
+    .sub-filters::-webkit-scrollbar {
+        display: none;
+    }
 
     .sub-filters.active {
         max-height: 140px;
@@ -1358,7 +1364,7 @@ nav.scrolled .menu-label {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
         border-radius: 40px;
     }
-    
+
     .sf-btn.on {
         background: var(--gold);
         color: #fff;
@@ -1457,7 +1463,8 @@ nav.scrolled .menu-label {
 .m-img-subs {
     display: flex;
     gap: 4px;
-    height: 100px; /* Adjust height of thumbnails */
+    height: 100px;
+    /* Adjust height of thumbnails */
 }
 
 .m-img-sub {
@@ -2362,7 +2369,8 @@ footer {
     .about-ph {
         background-size: cover;
         background-position: center;
-        aspect-ratio: 1; /* Square format, slightly smaller than portrait */
+        aspect-ratio: 1;
+        /* Square format, slightly smaller than portrait */
         border-radius: 12px;
     }
 
@@ -2679,8 +2687,13 @@ footer {
     color: #000;
 }
 
-.lb-prev { left: 2rem; }
-.lb-next { right: 2rem; }
+.lb-prev {
+    left: 2rem;
+}
+
+.lb-next {
+    right: 2rem;
+}
 
 .lb-nav-btn.hidden {
     opacity: 0;
@@ -2709,8 +2722,13 @@ footer {
         height: 44px;
     }
 
-    .lb-prev { left: 1rem; }
-    .lb-next { right: 1rem; }
+    .lb-prev {
+        left: 1rem;
+    }
+
+    .lb-next {
+        right: 1rem;
+    }
 
     #lbImg {
         max-width: 95vw;
