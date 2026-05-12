@@ -820,16 +820,12 @@ nav.scrolled .menu-label {
 .about-ph {
     width: 100%;
     aspect-ratio: 1.5;
-    background: url('assets/sectionApropos.jpeg') center/contain no-repeat;
+    object-fit: contain;
     background-color: var(--bg-2);
-    display: flex;
-    align-items: flex-end;
-    padding: 2rem;
     border-radius: 30px;
 }
 
 .about-ph-v2 {
-    background-image: url('assets/sectionApropos2.jpeg');
     aspect-ratio: 1.4;
 }
 
@@ -1395,13 +1391,18 @@ nav.scrolled .menu-label {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 350px;
 }
 
 .m-img {
     width: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center;
     background-size: cover;
     background-position: center;
+    background-color: var(--bg-2); /* Placeholder while loading */
     transition: transform .8s var(--ease);
     border-radius: 12px;
 }

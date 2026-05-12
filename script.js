@@ -51,8 +51,8 @@ function renderProjects(cat, subCat = 'all') {
         if (p.isGroup && p.images && p.images.length === 2) {
             mediaHtml = `
                 <div class="m-split-container" style="height: ${h};">
-                    <div class="m-split-pane split-left" style="background-image: url('${p.images[0]}');"></div>
-                    <div class="m-split-pane split-right" style="background-image: url('${p.images[1]}');"></div>
+                    <img src="${p.images[0]}" loading="lazy" class="m-split-pane split-left" style="object-fit: cover; width: 50%; height: 100%; display: block;">
+                    <img src="${p.images[1]}" loading="lazy" class="m-split-pane split-right" style="object-fit: cover; width: 50%; height: 100%; display: block;">
                     <div class="m-split-divider">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
@@ -64,15 +64,15 @@ function renderProjects(cat, subCat = 'all') {
             const subImgs = p.images.slice(1, 4); // Show up to 3 thumbnails
             mediaHtml = `
                 <div class="m-img-group" style="height: ${h};">
-                    <div class="m-img-main" style="background-image: url('${mainImg}');"></div>
+                    <img src="${mainImg}" loading="lazy" class="m-img-main" style="object-fit: cover; width: 100%; height: 100%; display: block;">
                     <div class="m-img-subs">
-                        ${subImgs.map(img => `<div class="m-img-sub" style="background-image: url('${img}');"></div>`).join('')}
+                        ${subImgs.map(img => `<img src="${img}" loading="lazy" class="m-img-sub" style="object-fit: cover; width: 100%; height: 100%; display: block;">`).join('')}
                     </div>
                 </div>
             `;
         } else {
             const thumb = p.isGroup ? p.images[0] : p.image;
-            mediaHtml = `<div class="m-img" style="background-image: url('${thumb}'); height: ${h};"></div>`;
+            mediaHtml = `<img src="${thumb}" loading="lazy" class="m-img" style="height: ${h}; object-fit: cover; width: 100%; display: block;">`;
         }
 
         
