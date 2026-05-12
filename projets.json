@@ -345,5 +345,80 @@
         "categoryLabel": "Rendu Intérieur",
         "image": "assets/RenduInterieur/9.jpeg",
         "height": "400px"
+    },
+    {
+        "id": 200,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "salle-de-bain",
+        "categoryLabel": "Salle de bain",
+        "images": ["assets/SALLE DE BAIN/salle1/1.png", "assets/SALLE DE BAIN/salle1/2.png", "assets/SALLE DE BAIN/salle1/3.png"],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 201,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "salle-de-bain",
+        "categoryLabel": "Salle de bain",
+        "images": ["assets/SALLE DE BAIN/salle2/4.png", "assets/SALLE DE BAIN/salle2/5.png", "assets/SALLE DE BAIN/salle2/6.png"],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 202,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "salle-de-bain",
+        "categoryLabel": "Salle de bain",
+        "images": ["assets/SALLE DE BAIN/salle3/7.png", "assets/SALLE DE BAIN/salle3/8.png", "assets/SALLE DE BAIN/salle3/9.png"],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 210,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "rooftop",
+        "categoryLabel": "Rooftop",
+        "image": "assets/Rooftop/1.png",
+        "height": "420px"
+    },
+    {
+        "id": 211,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "rooftop",
+        "categoryLabel": "Rooftop",
+        "image": "assets/Rooftop/2.png",
+        "height": "400px"
+    },
+    {
+        "id": 212,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "rooftop",
+        "categoryLabel": "Rooftop",
+        "image": "assets/Rooftop/3.png",
+        "height": "440px"
+    },
+    {
+        "id": 220,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "sejour",
+        "categoryLabel": "Séjour",
+        "image": "assets/Sejour/1.png",
+        "height": "430px"
+    },
+    {
+        "id": 221,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "sejour",
+        "categoryLabel": "Séjour",
+        "image": "assets/Sejour/2.png",
+        "height": "410px"
     }
 ]
