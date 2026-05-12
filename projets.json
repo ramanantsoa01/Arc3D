@@ -71,6 +71,84 @@
         "height": "350px"
     },
     {
+        "id": 5,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/M8/1.png",
+            "assets/NouvelleConstruction/M8/2.png",
+            "assets/NouvelleConstruction/M8/3.png"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/M9/1.png",
+            "assets/NouvelleConstruction/M9/2.png",
+            "assets/NouvelleConstruction/M9/3.png"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 7,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/M10/1.png",
+            "assets/NouvelleConstruction/M10/2.png"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 8,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/M40/1.png",
+            "assets/NouvelleConstruction/M40/2.png",
+            "assets/NouvelleConstruction/M40/3.png"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 9,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/M50/1.png",
+            "assets/NouvelleConstruction/M50/2.png",
+            "assets/NouvelleConstruction/M50/3.png",
+            "assets/NouvelleConstruction/M50/4.png"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
+        "id": 10,
+        "title": "",
+        "category": "construction",
+        "categoryLabel": "Nouvelle Construction",
+        "images": [
+            "assets/NouvelleConstruction/M60/1.png",
+            "assets/NouvelleConstruction/M60/2.png",
+            "assets/NouvelleConstruction/M60/3.png"
+        ],
+        "isGroup": true,
+        "height": "450px"
+    },
+    {
         "id": 11,
         "title": "",
         "category": "interieur",
@@ -352,7 +430,11 @@
         "category": "interieur",
         "subCategory": "salle-de-bain",
         "categoryLabel": "Salle de bain",
-        "images": ["assets/SALLE DE BAIN/salle1/1.png", "assets/SALLE DE BAIN/salle1/2.png", "assets/SALLE DE BAIN/salle1/3.png"],
+        "images": [
+            "assets/SALLE DE BAIN/salle1/1.png",
+            "assets/SALLE DE BAIN/salle1/2.png",
+            "assets/SALLE DE BAIN/salle1/3.png"
+        ],
         "isGroup": true,
         "height": "450px"
     },
@@ -362,7 +444,11 @@
         "category": "interieur",
         "subCategory": "salle-de-bain",
         "categoryLabel": "Salle de bain",
-        "images": ["assets/SALLE DE BAIN/salle2/4.png", "assets/SALLE DE BAIN/salle2/5.png", "assets/SALLE DE BAIN/salle2/6.png"],
+        "images": [
+            "assets/SALLE DE BAIN/salle2/4.png",
+            "assets/SALLE DE BAIN/salle2/5.png",
+            "assets/SALLE DE BAIN/salle2/6.png"
+        ],
         "isGroup": true,
         "height": "450px"
     },
@@ -372,7 +458,11 @@
         "category": "interieur",
         "subCategory": "salle-de-bain",
         "categoryLabel": "Salle de bain",
-        "images": ["assets/SALLE DE BAIN/salle3/7.png", "assets/SALLE DE BAIN/salle3/8.png", "assets/SALLE DE BAIN/salle3/9.png"],
+        "images": [
+            "assets/SALLE DE BAIN/salle3/7.png",
+            "assets/SALLE DE BAIN/salle3/8.png",
+            "assets/SALLE DE BAIN/salle3/9.png"
+        ],
         "isGroup": true,
         "height": "450px"
     },
