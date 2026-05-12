@@ -125,6 +125,15 @@
         "height": "420px"
     },
     {
+        "id": 160,
+        "title": "",
+        "category": "interieur",
+        "subCategory": "parentale",
+        "categoryLabel": "Maison Parentale",
+        "image": "assets/ChambresParentale/6.png",
+        "height": "420px"
+    },
+    {
         "id": 17,
         "title": "",
         "category": "interieur",
