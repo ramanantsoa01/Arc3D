@@ -1018,7 +1018,8 @@ nav.scrolled .menu-label {
     -webkit-backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     position: relative;
     z-index: 2;
 }
@@ -1102,7 +1103,7 @@ nav.scrolled .menu-label {
 
 .svc-icon-img {
     width: auto;
-    height: 7rem;
+    height: 9rem;
     margin-bottom: 2.5rem;
     display: block;
     transition: all .6s var(--ease);
@@ -1137,7 +1138,7 @@ nav.scrolled .menu-label {
 
 .svc-tag {
     display: inline-block;
-    align-self: flex-start;
+    align-self: center;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
