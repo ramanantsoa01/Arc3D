@@ -121,10 +121,10 @@ nav.scrolled .nav-links a {
 
 .nav-links a {
     font-size: .95rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .12em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     position: relative;
     transition: color .4s;
@@ -1404,7 +1404,8 @@ nav.scrolled .menu-label {
     object-position: center;
     background-size: cover;
     background-position: center;
-    background-color: var(--bg-2); /* Placeholder while loading */
+    background-color: var(--bg-2);
+    /* Placeholder while loading */
     transition: transform .8s var(--ease);
     border-radius: 12px;
 }
