@@ -1102,11 +1102,12 @@ nav.scrolled .menu-label {
 
 .svc-icon-img {
     width: auto;
-    height: 4.5rem;
+    height: 7rem;
     margin-bottom: 2.5rem;
     display: block;
-    transition: transform .6s var(--ease);
+    transition: all .6s var(--ease);
     object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
 }
 
 .svc-card:hover .svc-icon {
@@ -1114,7 +1115,8 @@ nav.scrolled .menu-label {
 }
 
 .svc-card:hover .svc-icon-img {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.15) translateY(-5px);
+    filter: drop-shadow(0 15px 30px rgba(184, 145, 58, 0.3));
 }
 
 .svc-name {
